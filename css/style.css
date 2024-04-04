@@ -64,6 +64,8 @@ section {
     text-align: center;
     display: flex;
     cursor:pointer;
+    border: #000000;
+    border-radius: 20px;
 }
 
 section:hover{

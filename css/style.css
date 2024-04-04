@@ -53,6 +53,10 @@ nav ul li a {
     align-items: center;
 }
 
+.tituloPagina{
+    margin: 20px;
+}
+
 .botaoMenu{
     background: #fff;
     padding: 20px;

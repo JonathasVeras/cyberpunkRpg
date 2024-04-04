@@ -1,8 +1,5 @@
 .mainFichasJogador{
-    margin: 20px auto;
     height: 78vh;
-    flex: auto;
-    display: flex;
     justify-content: center;
 }
 
@@ -11,7 +8,6 @@
     justify-content: end;
     align-items: start;
     text-align: end;
-    width: 100vw;
     margin: 20px;
 }
 

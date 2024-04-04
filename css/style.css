@@ -43,7 +43,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
+.mainHome {
     max-width: 800px;
     margin: 20px auto;
     height: 78vh;

@@ -9,12 +9,15 @@
     align-items: start;
     text-align: end;
     margin: 20px;
+    
 }
 
 .botaoAdicionar{
     padding: 10px;
     border-radius: 10px;
-    background-color: aliceblue;
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #353535;
+    font-family:'Oswald', sans-serif;
+    color: #009334;
 }

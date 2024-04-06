@@ -1,0 +1,100 @@
+.mainFichasJogador{
+    height: 78vh;
+    justify-content: center;
+}
+
+.tituloPagina{
+    color: #00ffff;
+
+}
+
+#caixaCriarFicha{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 950px;
+    overflow-y: scroll;
+}
+
+body{
+    background-color: #333;
+}
+
+#formFicha{
+    background-color: rgb(88, 88, 88);
+    width: 1200px;
+    height: 100%;
+    border: #00ffff 3px solid;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.descricoesFicha{
+    font-family:'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
+.fichasH3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#selectAntecedente{
+    border-radius: 3px;
+    background-color: #333;
+    color: white;
+    font-family:'Open sans', sans-serif;
+    margin-left: 10px;
+    width: 120px;
+}
+
+.inputFicha{
+    margin-right: 20px;
+    background-color: #333;
+    color: white;
+    font-family:'Open sans', sans-serif;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: #00ffff;
+
+
+}
+
+.atributos{
+    font-weight: bold;
+    font-size: 25px;
+    border: #000000 3px solid;
+    width: 150px;
+    text-align: center;
+
+}
+
+#pontosRestantes{
+    display: flex;
+    justify-content: center;
+}
+
+#atributosDisplay{
+    display: flex;
+    flex-direction: column;
+}
+
+#primeirosAtributos{
+    display: flex inline;
+    justify-content: space-evenly;
+}
+
+#segundosAtributos{
+    display: flex inline;
+    justify-content: space-evenly;
+
+}
+
+.formAtributo{
+    margin-right: 40px;
+}

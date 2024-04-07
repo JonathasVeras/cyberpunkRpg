@@ -71,3 +71,38 @@ body{
     width: 100%;
     max-width: 400px;
 }
+
+@media screen and (max-width: 768px) {
+    .mainCriarProfile {
+        height: auto; 
+    }
+
+    #caixaCriarFicha {
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    .fichasH3 {
+        font-size: 20px; 
+    }
+
+    .inputFileContainer {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .inputFicha {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fichasH3 {
+        font-size: 18px;
+    }
+
+    .customFileUpload {
+        font-size: 14px;
+        padding: 8px 15px; 
+    }
+}

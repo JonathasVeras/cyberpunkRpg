@@ -8,12 +8,12 @@
 
 }
 
-#caixaCriarFicha{
+#caixaCriarAventura{
     display: flex;
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 970px;
+    height: 450px;
     overflow-y: scroll;
 }
 
@@ -21,7 +21,7 @@ body{
     background-color: #333;
 }
 
-#formFicha{
+#fdivAventura{
     background-color: rgb(88, 88, 88);
     width: 1200px;
     height: 100%;
@@ -30,78 +30,61 @@ body{
     padding-top: 10px;
 }
 
-.descricoesFicha{
-    font-family:'Oswald', sans-serif;
-    font-size: 20px;
-
+#imgAndDescricao{
+    display:inline-flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    width: 100%;
 }
 
-.fichasH3{
-    font-weight: bold;
-    font-size: 25px;
+#formImagem{
+    display: flex;
+    flex-direction: column;
 }
 
-#selectAntecedente{
-    border-radius: 3px;
+#imgPH{
+    height: 193px;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#formDescricao{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#txtAreaDescricao{
+    border-radius: 4px;
     background-color: #333;
     color: white;
-    font-family:'Open sans', sans-serif;
-    margin-left: 10px;
-    width: 120px;
 }
 
-.inputFicha{
+#nomeAventura{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+}
+
+#formNome{
+    justify-content: center;
+}
+
+#inputNomeAventura{
     margin-right: 20px;
     background-color: #333;
     color: white;
     font-family:'Open sans', sans-serif;
 }
 
-h3{
-    font-size: 35px;
-    font-weight: bold;
-    color: #00ffff;
-
-
-}
-
-.atributos{
-    font-weight: bold;
-    font-size: 25px;
-    border: #000000 3px solid;
-    width: 150px;
-    text-align: center;
-
-}
-
-#pontosRestantes{
-    display: flex;
-    justify-content: center;
-}
-
-#atributosDisplay{
-    display: flex;
-    flex-direction: column;
-}
-
-#primeirosAtributos{
-    display: flex inline;
-    justify-content: space-evenly;
-}
-
-#segundosAtributos{
-    display: flex inline;
-    justify-content: space-evenly;
-
-}
-
-.formAtributo{
-    margin-right: 40px;
-}
-
 #botoes{
     display: flex inline;
     flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 15px;
 }
 
 #butFinalizar{

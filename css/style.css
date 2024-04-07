@@ -26,10 +26,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #00ffff;
+    background-color: #333;
     margin: 0;
     font-family:'Open sans', sans-serif;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 
@@ -80,7 +80,7 @@ nav ul li a {
 }
 
 .botaoMenu{
-    background: #fff;
+    background: #f3eb00;
     padding: 20px;
     margin-right: 20px;
     height: 100px;

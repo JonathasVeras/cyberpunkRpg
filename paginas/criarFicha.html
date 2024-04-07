@@ -36,15 +36,16 @@
                 <input type="text" class="inputFicha" size="30">
 
                 <label class="fichasH3">Idade:</label>
-                <input type="text" class="inputFicha"> 
+                <input type="text" class="inputFicha" size="5"> 
 
                 <label class="fichasH3">Sexo:</label>
                 <input type="text" class="inputFicha"> <br/> <br/>
                 
                 <label for="nome" class="fichasH3">Antecedente</label>
                 <div class="descricoesFicha">Seu Antecedente dirá quem você era antes da aventura começar,
-                não precisa representar sua ocupação atual:
+                    não precisa representar sua ocupação atual:
                     <select name="antecedente" id="selectAntecedente">
+                        <option value="nada"></option>
                         <option value="idol">Idol</option>
                         <option value="midia">Mídia</option>
                         <option value="netrunner">Netrunner</option>
@@ -66,7 +67,9 @@
                     Você poderá definir qual a afinidade do seu personagem com cada uma destas por meio
                     da distribuição de 72 pontos dentre todos os 24. <br/>
                 </div>
-                <div class="descricoesFicha">*Lembre-se, para cada valor, o mínimo é 2 pontos e o máximo é 10 pontos. <br/></div>
+                <div class="descricoesFicha">*Lembre-se, para cada valor, o mínimo é 2 pontos e o máximo é 10 pontos. <br/>
+                </div> 
+                <br/>
                 <div id="pontosRestantes">
                     <label class="descricoesFicha" style="margin-right: 20px;">Pontos restantes:</label>
                     <input class="inputFicha" size="4" value="72" style="text-align: center;" readonly><br/>
@@ -78,6 +81,7 @@
                         <form></form>
                         <form class="formAtributo">
                             <div class="atributos">Físico</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Agilidade:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -93,6 +97,7 @@
 
                         <form class="formAtributo">
                             <div class="atributos">Combate</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Bloqueio:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -108,6 +113,7 @@
 
                         <form class="formAtributo">
                             <div class="atributos">Mental</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Autocontrole:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -127,6 +133,7 @@
                     <div id="segundosAtributos">
                         <form class="formAtributo">
                             <div class="atributos">Social</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Empatia:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -142,6 +149,7 @@
 
                         <form class="formAtributo">
                             <div class="atributos">Techno</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Aceitação:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -157,6 +165,7 @@
 
                         <form class="formAtributo">
                             <div class="atributos">Oculto</div>
+
                             <label class="descricoesFicha" style="margin-right: 10px;">Destino:</label>
                             <input type="text" class="inputFicha" size="4"><br/>
 
@@ -170,6 +179,11 @@
                             <input type="text" class="inputFicha" size="4"><br/>
                         </form>
 
+                    </div>
+                    <br/> <br/>
+                    <div id="botoes">
+                        <button type="button" id="butSair">Sair</button>
+                        <input type="submit" value="Finalizar" id="butFinalizar">
                     </div>
                 </div>
             </form>

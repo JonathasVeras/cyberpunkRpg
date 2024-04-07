@@ -5,23 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Importando a fonte Oswald */
-@font-face {
-    font-family: 'Oswald';
-    src: url('../font/Oswald-Regular.ttf') format('truetype'); /* Formato WOFF2 */
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Importando a fonte Open Sans */
-@font-face {
-    font-family: 'Open sans';
-    src: url('../font/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype'); /* Formato WOFF2 */
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /* Estilos Globais */
 body {
     font-family: Arial, sans-serif;
@@ -32,14 +15,12 @@ body {
     color:rgb(0, 0, 0);
 }
 
-
 header {
     background: #f3eb00;
     color: #000000;
     display: flex;
     align-items: center;
     padding: 10px;
-    font-family:'Oswald', sans-serif;
 }
 
 header h1 {
@@ -76,7 +57,6 @@ nav ul li a {
 
 .tituloPagina{
     margin: 20px;
-    font-family:'Oswald', sans-serif;
 }
 
 .botaoMenu{
@@ -101,7 +81,7 @@ section:hover{
 }
 
 footer {
-    background:rgb(88, 88, 88);
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;

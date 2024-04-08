@@ -106,3 +106,33 @@ body{
         padding: 8px 15px; 
     }
 }
+
+#botoes{
+    display: flex inline;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+}
+
+#butSair{
+    background-color: rgb(186, 1, 1);
+    color: white;  
+    margin-right: 20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    font-family:'Open sans', sans-serif; font-weight: bold;
+}
+
+#butFinalizar{
+    background-color: #f3eb00;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    font-family:'Open sans', sans-serif; font-weight: bold;
+}

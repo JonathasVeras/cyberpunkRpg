@@ -13,8 +13,12 @@
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 970px;
+    height: auto;
     overflow-y: scroll;
+}
+
+#camposString{
+    display: flex;
 }
 
 body{
@@ -71,7 +75,6 @@ h3{
     border: #000000 3px solid;
     width: 150px;
     text-align: center;
-
 }
 
 #pontosRestantes{
@@ -87,12 +90,12 @@ h3{
 #primeirosAtributos{
     display: flex inline;
     justify-content: space-evenly;
+    padding-bottom: 40px;
 }
 
 #segundosAtributos{
     display: flex inline;
     justify-content: space-evenly;
-
 }
 
 .formAtributo{
@@ -102,6 +105,7 @@ h3{
 #botoes{
     display: flex inline;
     flex-direction: row-reverse;
+    margin: 20px;
 }
 
 #butFinalizar{
@@ -126,4 +130,32 @@ h3{
     padding-right: 12px;
     border-radius: 4px;
     font-family:'Open sans', sans-serif; font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    #caixaCriarFicha{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: auto;
+        overflow-y: scroll;
+    }
+    #atributosDisplay{
+        flex-direction: column;
+    }
+    #primeirosAtributos{
+        display: grid;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        justify-content:center;
+    }
+    #segundosAtributos{
+        display: grid;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        justify-content:center;
+    }
+    .formAtributo{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
 }

@@ -1,6 +1,7 @@
 .mainFichasJogador{
     height: 78vh;
     justify-content: center;
+    color:white
 }
 
 .tituloPagina{
@@ -52,6 +53,8 @@ body{
     font-family:'Open sans', sans-serif;
     margin-left: 10px;
     width: 120px;
+    height: 40px;
+    font-size:large;
 }
 
 .inputFicha{
@@ -72,7 +75,8 @@ h3{
 .atributos{
     font-weight: bold;
     font-size: 25px;
-    border: #000000 3px solid;
+    border: #e9de05 3px solid;
+    border-radius: 10px;
     width: 150px;
     text-align: center;
 }

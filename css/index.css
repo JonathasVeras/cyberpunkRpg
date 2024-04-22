@@ -1,0 +1,25 @@
+.mainHome {
+    height: 85vh;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagens/wallpapers/wallpaper_home.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.botaoMenu{
+    background: #f3eb00;
+    padding: 20px;
+    margin-right: 20px;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    cursor:pointer;
+    border: #000000;
+    border-radius: 20px;
+}

@@ -31,172 +31,39 @@
         </h1>
         <div id="caixaCriarFicha">
             <form id="formFicha">
-                <h3>Informações Pessoais</h3>
-                <div class="camposString">
-                    <div>
-                        <label class="fichasH3">Nome:</label>
-                        <input type="text" class="inputFicha" size="30">
-                    </div>
-                    <div>
-                        <label class="fichasH3">Idade:</label>
-                        <input tFype="text" class="inputFicha" size="5">
-                    </div>
-                    <div>
-                        <label class="fichasH3">Sexo:</label>
-                        <input type="text" class="inputFicha"> <br /> <br />
-                    </div>
-                </div>
+
                 <label for="nome" class="fichasH3">Antecedente</label>
-                <div class="descricoesFicha">Seu Antecedente dirá quem você era antes da aventura começar,
+
+                <div class="descricoesFicha">
+                    Seu Antecedente dirá quem você era antes da aventura começar,
                     não precisa representar sua ocupação atual:
-                    <select name="antecedente" id="selectAntecedente">
-                        <option value="nada"></option>
-                        <option value="idol">Idol</option>
-                        <option value="midia">Mídia</option>
-                        <option value="netrunner">Netrunner</option>
-                        <option value="nomade">Nômade</option>
-                        <option value="policial">Policial</option>
-                        <option value="solo">Solo</option>
-                        <option value="technomante">Technomante</option>
-                        <option value="technomedico">Technomédico</option>
-                        <option value="atleta">Atleta</option>
-                        <option value="brutamonte">Brutamonte</option>
-                        <option value="corporativo">Corporativo</option>
-                        <option value="criminoso">Criminoso</option>
-                    </select>
-                </div>
-                <br />
-
-                <h3>Atributos</h3>
-                <div class="descricoesFicha">Cada um dos seguintes 6 atributos terá 4 subatribtos.
-                    Você poderá definir qual a afinidade do seu personagem com cada uma destas por meio
-                    da distribuição de 72 pontos dentre todos os 24. <br />
-                </div>
-                <div class="descricoesFicha">*Lembre-se, para cada valor, o mínimo é 2 pontos e o máximo é 10 pontos.
-                    <br />
-                </div>
-                <br />
-                <div id="pontosRestantes">
-                    <label class="descricoesFicha" style="margin-right: 20px;">Pontos restantes:</label>
-                    <input class="inputFicha" size="4" value="72" style="text-align: center;" readonly><br />
                 </div>
 
-                <br />
-                <div id="atributosDisplay">
-                    <div id="primeirosAtributos">
-                        <form></form>
-                        <form class="formAtributo">
-                            <div class="atributos">Físico</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Agilidade:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Corpo:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Força:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Resistência:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                        <form class="formAtributo">
-                            <div class="atributos">Combate</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Bloqueio:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Briga:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Esquiva:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Foco:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                        <form class="formAtributo">
-                            <div class="atributos">Mental</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Autocontrole:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Destreza:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Inteligência:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Sabedoria:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                    </div>
-
-                    <div id="segundosAtributos">
-                        <form class="formAtributo">
-                            <div class="atributos">Social</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Empatia:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Intimidação:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Liderança:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Sedução:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                        <form class="formAtributo">
-                            <div class="atributos">Techno</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Aceitação:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Humanidade:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Invasão:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Proteção:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                        <form class="formAtributo">
-                            <div class="atributos">Oculto</div>
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Destino:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Fé:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Narrativa:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-
-                            <label class="descricoesFicha" style="margin-right: 10px;">Sorte:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
-                        </form>
-
-                    </div>
-                    <br /> <br />
-                    <div id="botoes">
-                        <button type="button" id="butSair">Sair</button>
-                        <input type="submit" value="Finalizar" id="butFinalizar">
-                    </div>
+                <select name="antecedente" id="selectAntecedente">
+                    <option value="nada"></option>
+                    <option value="idol">Idol</option>
+                    <option value="midia">Mídia</option>
+                    <option value="netrunner">Netrunner</option>
+                    <option value="nomade">Nômade</option>
+                    <option value="policial">Policial</option>
+                    <option value="solo">Solo</option>
+                    <option value="technomante">Technomante</option>
+                    <option value="technomedico">Technomédico</option>
+                    <option value="atleta">Atleta</option>
+                    <option value="brutamonte">Brutamonte</option>
+                    <option value="corporativo">Corporativo</option>
+                    <option value="criminoso">Criminoso</option>
+                </select>
+                <div id="botoes">
+                    <button type="button" id="butSair">Sair</button>
+                    <input type="submit" value="Continuar" id="butFinalizar">
                 </div>
             </form>
         </div>
-        <footer>
-            <p>&copy; 2024 Universidade Federal do Rio Grande do Norte</p>
-        </footer>
     </main>
+    <footer>
+        <p>&copy; 2024 Universidade Federal do Rio Grande do Norte</p>
+    </footer>
 
 </body>
 

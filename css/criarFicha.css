@@ -1,12 +1,16 @@
 .mainFichasJogador{
-    height: 78vh;
+    height: auto;
     justify-content: center;
-    color:white
+    color:white;
+    background-image: url('../imagens/wallpapers/wallpaper_personagens.png');
+    background-position: center;
+    padding-bottom: 50px;
 }
 
 .tituloPagina{
     color: #00ffff;
-
+    margin-top: 0;
+    padding-top: 20px;
 }
 
 #caixaCriarFicha{
@@ -15,7 +19,6 @@
     margin-top: 15px;
     margin-bottom: 15px;
     height: auto;
-    overflow-y: scroll;
 }
 
 #camposString{
@@ -33,6 +36,8 @@ body{
     border: #00ffff 3px solid;
     padding-left: 20px;
     padding-top: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .descricoesFicha{
@@ -52,9 +57,10 @@ body{
     color: white;
     font-family:'Open sans', sans-serif;
     margin-left: 10px;
-    width: 120px;
-    height: 40px;
-    font-size:large;
+    margin: 50px;
+    width: 800px;
+    height: 90px;
+    font-size:x-large;
 }
 
 .inputFicha{
@@ -107,33 +113,29 @@ h3{
 }
 
 #botoes{
-    display: flex inline;
     flex-direction: row-reverse;
-    margin: 20px;
+    margin: 50px;
 }
 
 #butFinalizar{
     background-color: #f3eb00;
     color: rgb(0, 0, 0);
-    margin-right: 20px;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left: 12px;
-    padding-right: 12px;
     border-radius: 4px;
     font-family:'Open sans', sans-serif; font-weight: bold;
+    font-size: medium;
+    font-weight: bold;
+    padding: 20px;
 }
 
 #butSair{
     background-color: rgb(186, 1, 1);
     color: white;  
-    margin-right: 20px;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left: 12px;
-    padding-right: 12px;
     border-radius: 4px;
+    width: 80px auto;
     font-family:'Open sans', sans-serif; font-weight: bold;
+    font-size: medium;
+    font-weight: bold;
+    padding: 20px;
 }
 
 @media screen and (max-width: 767px) {

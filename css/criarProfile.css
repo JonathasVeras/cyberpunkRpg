@@ -4,6 +4,10 @@ body{
 
 .tituloPagina{
     color: #00ffff;
+    background-color: rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 10px;
+    border: #00ffff 3px solid;
 }
 
 .mainCriarProfile {
@@ -12,6 +16,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('../imagens/wallpapers/wallpaper_criar_profile.png');
+    background-position: center;
 }
 
 #caixaCriarFicha {

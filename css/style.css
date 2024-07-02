@@ -46,7 +46,10 @@ nav ul li a {
 }
 
 .tituloPagina{
-    margin: 20px;
+    color: #00ffff;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-left: 10px;
 }
 
 section:hover{

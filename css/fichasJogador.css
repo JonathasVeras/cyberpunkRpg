@@ -1,6 +1,8 @@
 .mainFichasJogador{
     height: 78vh;
     justify-content: center;
+    background-image: url('../imagens/wallpapers/wallpaper_personagens.png');
+    background-position: center;
 }
 
 .menuDeBotoes{

@@ -7,7 +7,7 @@
     <title>Cyberpunk 2093</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/criarFicha.css">
-    <script src="../js/scriptCriarFichas.js"></script>
+    <script src="../js/scriptCriarFichas2.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <div id="caixaCriarFicha">
             <form id="formFicha">
                 <h3>Atributos</h3>
-                <div class="descricoesFicha">Cada um dos seguintes 6 atributos terá 4 subatribtos.
+                <div class="descricoesFicha">Cada um dos seguintes 6 atributos terá 4 subatributos.
                     Você poderá definir qual a afinidade do seu personagem com cada uma destas por meio
                     da distribuição de 72 pontos dentre todos os 24. <br />
                 </div>
@@ -54,48 +54,48 @@
                             <div class="atributos">Físico</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Agilidade:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="agilidade"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Corpo:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="corpo"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Força:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="forca"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Resistência:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="resistencia"><br />
                         </form>
 
                         <form class="formAtributo">
                             <div class="atributos">Combate</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Bloqueio:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="bloqueio"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Briga:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="briga"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Esquiva:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="esquiva"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Foco:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="foco"><br />
                         </form>
 
                         <form class="formAtributo">
                             <div class="atributos">Mental</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Autocontrole:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="autocontrole"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Destreza:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="destreza"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Inteligência:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="inteligencia"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Sabedoria:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="sabedoria"><br />
                         </form>
 
                     </div>
@@ -105,55 +105,55 @@
                             <div class="atributos">Social</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Empatia:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="empatia"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Intimidação:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="intimidacao"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Liderança:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="lideranca"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Sedução:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="seducao"><br />
                         </form>
 
                         <form class="formAtributo">
                             <div class="atributos">Techno</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Aceitação:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="aceitacao"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Humanidade:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="humanidade"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Invasão:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="invasao"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Proteção:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="protecao"><br />
                         </form>
 
                         <form class="formAtributo">
                             <div class="atributos">Oculto</div>
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Destino:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="destino"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Fé:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="fe"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Narrativa:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="narrativa"><br />
 
                             <label class="descricoesFicha" style="margin-right: 10px;">Sorte:</label>
-                            <input type="text" class="inputFicha" size="4"><br />
+                            <input type="text" class="inputFicha" size="4" name="sorte"><br />
                         </form>
 
                     </div>
                     <br /> <br />
                     <div id="botoes">
                         <button type="button" id="butSair">Sair</button>
-                        <button type="button" id="butFinalizar">Continuar</button>
+                        <button type="button" id="butContinuar2">Continuar</button>
                     </div>
                 </div>
             </form>

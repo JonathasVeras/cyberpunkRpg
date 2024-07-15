@@ -1,31 +1,33 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Função para resetar o formulário e voltar para fichasJogador ao clicar em "Sair"
+    console.log("Document is ready!");
+
     document.getElementById("butSair").addEventListener("click", function() {
         document.getElementById("formFicha").reset();
         window.location.href = 'fichasJogador.html';
     });
 
-    // Função para processar o submit e redirecionar ao clicar em "Continuar"
-    document.getElementById("butFinalizar").addEventListener("click", function() {
-        // Resetar o formulário (mudar no futuro para passar essas informações para outra estrutura)
-        document.getElementById("formFicha").reset();
-        
-        // Obter o caminho da URL
-        var path = window.location.pathname;
-
-        // Extrair o nome da página (último segmento do caminho)
-        var currentPage = path.substring(path.lastIndexOf('/') + 1);
-    
-        // Verificar a página atual e redirecionar de acordo
-        if (currentPage === "criarFicha.html") {
-            window.location.href = 'criarFicha2.html';
-        } else if (currentPage === "criarFicha2.html") {
-            window.location.href = 'criarFicha5.html';
-        } else if (currentPage === "criarFicha5.html") {
-            window.location.href = 'fichasJogador.html';
-        } else {
-            // Adicione outros redirecionamentos ou uma ação padrão se necessário
-            console.log("Página desconhecida ou ação padrão.");
-        }
+    document.getElementById("butContinuar1").addEventListener("click", function() {
+        saveFormDataToLocalStorage('criarFicha2.html');
     });
+    
+    function saveFormDataToLocalStorage(nextPage) {
+        const formData = captureFormData();
+        let ficha = JSON.parse(localStorage.getItem('ficha')) || {};
+        Object.assign(ficha, formData);
+        localStorage.setItem('ficha', JSON.stringify(ficha));
+        window.location.href = nextPage;
+    }
+
+    function captureFormData() {
+        const formData = {};
+        const formElements = document.getElementById("formFicha").elements;
+
+        for (let element of formElements) {
+            if (element.tagName === "INPUT" || element.tagName === "SELECT") {
+                formData[element.name] = element.value;
+            }
+        }
+
+        return formData;
+    }
 });

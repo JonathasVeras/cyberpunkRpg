@@ -127,6 +127,26 @@ h3{
     padding: 20px;
 }
 
+#butContinuar2{
+    background-color: #f3eb00;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-family:'Open sans', sans-serif; font-weight: bold;
+    font-size: medium;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#butContinuar1{
+    background-color: #f3eb00;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-family:'Open sans', sans-serif; font-weight: bold;
+    font-size: medium;
+    font-weight: bold;
+    padding: 20px;
+}
+
 #butSair{
     background-color: rgb(186, 1, 1);
     color: white;  

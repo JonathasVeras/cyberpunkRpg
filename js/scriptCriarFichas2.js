@@ -61,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ficha.feridoESobrecarregado = feridoESobrecarregado;
         ficha.reducaoDanos = reducaoDanos;
 
-        console.log(ficha);
         localStorage.setItem('ficha', JSON.stringify(ficha));
-        // window.location.href = nextPage;
+        window.location.href = nextPage;
     }
 
     function captureFormData() {

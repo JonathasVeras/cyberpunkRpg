@@ -19,7 +19,51 @@
     border-radius: 10px;
     font-size: 30px;
     font-weight: bold;
-    background-color: #353535;
+    background-color: #220425;
     font-family:'Oswald', sans-serif;
-    color: #009334;
+    color: #00ffff;
+}
+
+#botaoRemover{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #220425;
+    font-family:'Oswald', sans-serif;
+    color: #DE1A1A;
+}
+
+.nome-personagem{
+    color: #00ffff;
+}
+
+.fichas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 53vh;
+    overflow-y: auto; /* Permite rolagem vertical */
+    padding: 10px;
+    padding-left: 50px;
+    color: #220425;
+}
+
+.card-ficha {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 150px;
+    background-color: #220425;
+    color: #ef767a;
+}
+
+footer {
+    background: #220425;
+    color: #ef767a;
+    text-align: center;
+    padding: 10px 0;
 }

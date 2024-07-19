@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 .tituloPagina{
-    color: #00ffff;
+    color: #ef767a;
     margin-top: 0;
     padding-top: 20px;
     margin-left: 10px;
@@ -59,8 +59,8 @@ section:hover{
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #220425;
+    color: #f3eb00;
     text-align: center;
     padding: 10px 0;
 }

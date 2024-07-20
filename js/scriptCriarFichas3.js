@@ -21,6 +21,7 @@ function postFichaNoFirebase() {
             caminharETerrenoDificil: ficha.caminharETerrenoDificil,
             feridoESobrecarregado: ficha.feridoESobrecarregado,
             reducaoDanos: ficha.reducaoDanos,
+            atributos: ficha.atributos,
         };
 
         const options = {

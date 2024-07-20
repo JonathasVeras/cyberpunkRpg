@@ -1,0 +1,105 @@
+/* visualizarFicha.css */
+.mainFichasJogador{
+    min-height:100vh;
+}
+
+/* visualizarFicha.css */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d0d0d;
+    border-bottom: 2px solid #d23669;
+    padding: 10px 0;
+}
+
+header h1 {
+    color: #d23669;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #d23669;
+}
+
+.mainFichasJogador {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.ficha-detalhes {
+    background: linear-gradient(145deg, #232323, #1a1a1a);
+    border: 2px solid #d23669;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Max width increased */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ficha-detalhes h2 {
+    color: #d23669;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.ficha-detalhes p {
+    flex: 0 0 48%;
+    margin: 10px 1%;
+    font-size: 1.1em;
+}
+
+.ficha-detalhes .secao {
+    border-top: 2px solid #d23669;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.atributos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.atributo {
+    flex: 0 0 30%;
+    background: #2a2a2a;
+    margin: 10px 1.5%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.atributo strong {
+    color: #d23669;
+    display: block;
+    margin-bottom: 5px;
+}

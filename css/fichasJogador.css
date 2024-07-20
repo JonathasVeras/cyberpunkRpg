@@ -1,8 +1,9 @@
 .mainFichasJogador{
-    height: 78vh;
+    min-height: 100vh;
     justify-content: center;
     background-image: url('../imagens/wallpapers/wallpaper_personagens.png');
     background-position: center;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .menuDeBotoes{
@@ -20,7 +21,7 @@
     font-size: 30px;
     font-weight: bold;
     background-color: #220425;
-    font-family:'Oswald', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     color: #00ffff;
 }
 
@@ -31,7 +32,7 @@
     font-size: 30px;
     font-weight: bold;
     background-color: #220425;
-    font-family:'Oswald', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     color: #DE1A1A;
 }
 

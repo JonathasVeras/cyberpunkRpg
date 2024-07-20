@@ -1,5 +1,5 @@
 .mainFichasJogador{
-    height: auto;
+    min-height:100vh;
     justify-content: center;
     color:white;
     background-image: url('../imagens/wallpapers/wallpaper_personagens.png');

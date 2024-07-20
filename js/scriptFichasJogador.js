@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             }
+            if (visualizar) {
+                localStorage.setItem('fichaSelecionada', JSON.stringify(ficha));
+                window.location.href = 'visualizarFicha.html';
+            }
         });
 
         fichasContainer.appendChild(card);
@@ -87,4 +91,5 @@ btnRemover.addEventListener("click", function (){
     remover = !remover;
 });
 
+var visualizar = true;
 

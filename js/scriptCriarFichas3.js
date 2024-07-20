@@ -24,6 +24,8 @@ function postFichaNoFirebase() {
             atributos: ficha.atributos,
         };
 
+        console.log(fichaDados)
+
         const options = {
             method: 'POST', // PUT para substituir ou POST para adicionar
             headers: {

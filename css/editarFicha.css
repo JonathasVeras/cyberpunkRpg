@@ -1,0 +1,74 @@
+.mainEditarFicha {
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('../imagens/wallpapers/wallpaper_personagens.png');
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.tituloPagina {
+    text-align: center;
+    margin-top: 20px;
+    color: #00ffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #220425;
+    border-radius: 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00ffff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.botaoSalvar {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #220425;
+    color: #00ffff;
+    cursor: pointer;
+}
+
+.atributos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer {
+    background: #220425;
+    color: #ef767a;
+    text-align: center;
+    padding: 10px 0;
+}

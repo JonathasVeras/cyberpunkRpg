@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // URL do Firebase Realtime Database (substitua <SEU-PROJETO> pelo seu projeto)
     const url = 'https://cyberpunk-web1-default-rtdb.firebaseio.com/fichas.json';
 
-     // Fazendo a requisição GET para buscar as fichas
+    // Fazendo a requisição GET para buscar as fichas
     fetch(url)
         .then(response => {
             if (!response.ok) { // Verifica se a resposta é OK (status 200-299)
@@ -65,22 +65,28 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.error('Erro ao remover a ficha:', error);
                     });
                 }
-            }
-            if (visualizar) {
+            } else if (visualizar) {
                 localStorage.setItem('fichaSelecionada', JSON.stringify(ficha));
                 window.location.href = 'visualizarFicha.html';
+            } else if (editar) {
+                localStorage.setItem('fichaSelecionada', JSON.stringify(ficha));
+                window.location.href = 'editarFicha.html';
             }
         });
 
         fichasContainer.appendChild(card);
     }
 
-
 });
 
 var remover = false;
+var visualizar = true;
+var editar = false;
+
 const btnRemover = document.getElementById('botaoRemover');
-btnRemover.addEventListener("click", function (){
+const btnEditar = document.getElementById('botaoEditar');
+
+btnRemover.addEventListener("click", function () {
     if (!remover) {
         btnRemover.style.color = "#220425";
         btnRemover.style.backgroundColor = "#DE1A1A";
@@ -89,7 +95,23 @@ btnRemover.addEventListener("click", function (){
         btnRemover.style.backgroundColor = "#220425";
     }
     remover = !remover;
+    visualizar = !remover;
+    editar = false;
+    btnEditar.style.color = "#dfdb13";
+    btnEditar.style.backgroundColor = "#220425";
 });
 
-var visualizar = true;
-
+btnEditar.addEventListener("click", function () {
+    if (!editar) {
+        btnEditar.style.color = "#220425";
+        btnEditar.style.backgroundColor = "#dfdb13";
+    } else {
+        btnEditar.style.color = "#dfdb13";
+        btnEditar.style.backgroundColor = "#220425";
+    }
+    editar = !editar;
+    visualizar = !editar;
+    remover = false;
+    btnRemover.style.color = "#DE1A1A";
+    btnRemover.style.backgroundColor = "#220425";
+});

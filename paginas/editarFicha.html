@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Ficha</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/editarFicha.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../js/editarFicha.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Cyberpunk 2093 - Editar Ficha</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="fichasJogador.html">Jogador</a></li>
+                    <li><a href="criarAventura.html">Mestre</a></li>
+                    <li><a href="https://arkana-rpg.com.br/cyberpunk-2093/">Referências</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mainEditarFicha">
+        <h1 class="tituloPagina">Editar Ficha</h1>
+        <form id="editarFichaForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="text" id="idade" name="idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo</label>
+                    <input type="text" id="sexo" name="sexo" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="antecedente">Antecedente</label>
+                    <select id="antecedente" name="antecedente">
+                        <option value="nada">Nenhum</option>
+                        <option value="idol">Idol</option>
+                        <option value="midia">Mídia</option>
+                        <option value="netrunner">Netrunner</option>
+                        <option value="nomade">Nômade</option>
+                        <option value="policial">Policial</option>
+                        <option value="solo">Solo</option>
+                        <option value="technomante">Technomante</option>
+                        <option value="technomedico">Technomédico</option>
+                        <option value="atleta">Atleta</option>
+                        <option value="brutamonte">Brutamonte</option>
+                        <option value="corporativo">Corporativo</option>
+                        <option value="criminoso">Criminoso</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="vidaMaxima">Vida Máxima</label>
+                    <input type="text" id="vidaMaxima" name="vidaMaxima" required>
+                </div>
+                <div class="form-group">
+                    <label for="pontosVidaToken">Pontos de Vida Token</label>
+                    <input type="text" id="pontosVidaToken" name="pontosVidaToken" required>
+                </div>
+                <div class="form-group">
+                    <label for="sanidadeMaxima">Sanidade Máxima</label>
+                    <input type="text" id="sanidadeMaxima" name="sanidadeMaxima" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Pontos de Sanidade Token</label>
+                    <input type="text" id="pontosSanidadeToken" name="pontosSanidadeToken" required>
+                </div>
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Redução de danos</label>
+                    <input type="text" id="reducaoDanos" name="reducaoDanos" required>
+                </div>
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Peso máximo</label>
+                    <input type="text" id="pesoMaximo" name="pesoMaximo" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Percepção Passiva</label>
+                    <input type="text" id="percepcaoPassiva" name="percepcaoPassiva" required>
+                </div>
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Movimento</label>
+                    <input type="text" id="movimento" name="movimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="pontosSanidadeToken">Velocidade Base</label>
+                    <input type="text" id="velocidadeBase" name="velocidadeBase" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="atributos">Atributos</label>
+                    <div id="atributosContainer" class="atributos-container">
+                        <!-- Campos dos atributos serão inseridos aqui -->
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="botaoSalvar">Salvar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Universidade Federal do Rio Grande do Norte</p>
+    </footer>
+</body>
+
+</html>

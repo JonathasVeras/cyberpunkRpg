@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let atributos = {};
         for (let key in ficha) {
-            if (key !== "nomePersonagem" && key !== "idadePersonagem" && key !== "sexoPersonagem" && key !== "antecedente" && key !== "atributos") {
+            if (key !== "nomePersonagem" && key !== "idadePersonagem" && key !== "sexoPersonagem" && key !== "antecedente" && key !== "atributos" && key !== "vidaMaxima" && key !== "pontosVidaToken" && key !== "percepcaoPassiva" && key !== "sanidadeMaxima" && key !== "percepcaoPassiva" && key !== "pesoMaximo" && key !== "identidade" && key !== "velocidadeBase" && key !== "movimento" && key !== "correr" && key !== "caminharETerrenoDificil" && key !== "feridoESobrecarregado" && key !== "reducaoDanos") {
                 atributos[key] = ficha[key];
                 delete ficha[key];
             }

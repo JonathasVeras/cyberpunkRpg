@@ -36,6 +36,17 @@
     color: #DE1A1A;
 }
 
+#botaoEditar{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #220425;
+    font-family: 'Orbitron', sans-serif;
+    color: #dfdb13;
+}
+
 .nome-personagem{
     color: #00ffff;
 }

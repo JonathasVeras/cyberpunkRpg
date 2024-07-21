@@ -1,6 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Script para criarFicha2.js carregado!");
-
+    
+    const pontosRestantesInput = document.getElementById('pontosRestantesInput');
+    const inputAtributosElements = document.querySelectorAll('.inputAtributos');
+    
+    function atualizarPontosRestantes() {
+        let totalPontos = 72;
+        inputAtributosElements.forEach(input => {
+            const valor = parseInt(input.value) || 0; // Convertendo o valor para inteiro, caso não seja um número, usar 0
+            totalPontos -= valor;
+        });
+        pontosRestantesInput.value = totalPontos;
+    }
+    
+    // Adicionar event listeners para os inputs
+    inputAtributosElements.forEach(input => {
+        input.addEventListener('blur', () => {
+            //atualiza antes de verificar
+            atualizarPontosRestantes();
+            if (pontosRestantesInput.value < 0){
+                alert("Você não tem mais pontos sobrando");
+                input.value = 2;
+                atualizarPontosRestantes();
+            }
+    
+            
+            const valor = parseInt(input.value) || 0;
+            if (valor > 10 || valor < 2){
+                alert("Os valores devem estar entre 2 e 10");
+                input.value = 2;
+            }
+            
+            atualizarPontosRestantes();
+            
+            
+        });
+    
+    });
+    
+    // Chamar a função inicial para garantir que os pontos sejam calculados no carregamento
+    atualizarPontosRestantes();
+    
     document.getElementById("butSair").addEventListener("click", function () {
         document.getElementById("formFicha").reset();
         window.location.href = 'fichasJogador.html';
@@ -11,7 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (butContinuar2) {
         butContinuar2.addEventListener("click", function () {
-            saveFormDataToLocalStorage('criarFicha3.html');
+            if (pontosRestantesInput.value > 0){
+                if (confirm("Você ainda tem pontos sobrando, tem certeza que deseja continuar?")){
+                    saveFormDataToLocalStorage('criarFicha3.html');
+                }
+            } else {
+                saveFormDataToLocalStorage('criarFicha3.html');
+            }
         });
     }
 
@@ -80,4 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         return formData;
     }
+    
+    
 });

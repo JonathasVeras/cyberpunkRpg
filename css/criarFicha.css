@@ -64,7 +64,7 @@ body{
     font-size:x-large;
 }
 
-.inputFicha{
+.inputFicha, .inputAtributos, #pontosRestantesInput{
     margin-right: 20px;
     background-color: #000000;
     color: #00ffff;

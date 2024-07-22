@@ -20,6 +20,10 @@
 .tituloPagina {
     color: #00ffff;
     text-align: center;
+    background-color: rgba(34, 4, 37, 0.8);
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .loginH3 {

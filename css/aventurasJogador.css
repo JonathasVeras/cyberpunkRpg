@@ -1,0 +1,81 @@
+.mainAventurasJogador{
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('../imagens/wallpapers/wallpaper_personagens.png');
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.menuDeBotoes{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    text-align: end;
+    margin: 20px;
+    
+}
+
+.botaoAdicionar{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #220425;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff;
+}
+
+#botaoRemover{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #220425;
+    font-family: 'Orbitron', sans-serif;
+    color: #DE1A1A;
+}
+
+#botaoEditar{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #220425;
+    font-family: 'Orbitron', sans-serif;
+    color: #dfdb13;
+}
+
+.nome-aventura{ /*MUDAR*/
+    color: #00ffff;
+}
+
+.aventuras-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 53vh;
+    overflow-y: auto; /* Permite rolagem vertical */
+    padding: 10px;
+    padding-left: 50px;
+    color: #220425;
+}
+
+.card-ficha { /*MUDAR*/
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 150px;
+    background-color: #220425;
+    color: #ef767a;
+}
+
+footer {
+    background: #220425;
+    color: #ef767a;
+    text-align: center;
+    padding: 10px 0;
+}

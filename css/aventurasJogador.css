@@ -47,8 +47,8 @@
     color: #dfdb13;
 }
 
-.nome-aventura{ /*MUDAR*/
-    color: #00ffff;
+.nome-aventura{
+    color: #dfdb13;
 }
 
 .aventuras-container {
@@ -62,7 +62,7 @@
     color: #220425;
 }
 
-.card-ficha { /*MUDAR*/
+.card-aventura {
     border: 1px solid #ccc;
     padding: 16px;
     border-radius: 16px;

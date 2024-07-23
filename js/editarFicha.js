@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         atributosContainer.appendChild(div);
     };
 
-    // Preenche os campos de atributos
     for (const atributo in fichaSelecionada.atributos) {
         criarCampoAtributo(atributo, fichaSelecionada.atributos[atributo]);
     }
@@ -70,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
             atributos: {}
         };
 
-        // Atualiza os valores dos atributos
         const inputsAtributos = atributosContainer.querySelectorAll('input');
         inputsAtributos.forEach(input => {
             updatedFicha.atributos[input.name] = input.value;

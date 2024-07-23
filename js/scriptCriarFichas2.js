@@ -7,16 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function atualizarPontosRestantes() {
         let totalPontos = 72;
         inputAtributosElements.forEach(input => {
-            const valor = parseInt(input.value) || 0; // Convertendo o valor para inteiro, caso não seja um número, usar 0
+            const valor = parseInt(input.value) || 0;
             totalPontos -= valor;
         });
         pontosRestantesInput.value = totalPontos;
     }
     
-    // Adicionar event listeners para os inputs
     inputAtributosElements.forEach(input => {
         input.addEventListener('blur', () => {
-            //atualiza antes de verificar
             atualizarPontosRestantes();
             if (pontosRestantesInput.value < 0){
                 alert("Você não tem mais pontos sobrando");
@@ -37,8 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
     });
-    
-    // Chamar a função inicial para garantir que os pontos sejam calculados no carregamento
+
     atualizarPontosRestantes();
     
     document.getElementById("butSair").addEventListener("click", function () {

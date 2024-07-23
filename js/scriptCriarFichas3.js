@@ -1,9 +1,9 @@
-
 function postFichaNoFirebase() {
     const ficha = JSON.parse(localStorage.getItem('ficha'));
+    const perfilAtual = JSON.parse(localStorage.getItem('perfilAtual'));
     const url = 'https://cyberpunk-web1-default-rtdb.firebaseio.com/fichas.json';
 
-    if (ficha) {
+    if (ficha && perfilAtual) {
         const fichaDados = {
             name: ficha.nomePersonagem,
             idade: ficha.idadePersonagem,
@@ -22,19 +22,19 @@ function postFichaNoFirebase() {
             feridoESobrecarregado: ficha.feridoESobrecarregado,
             reducaoDanos: ficha.reducaoDanos,
             atributos: ficha.atributos,
+            idUsuarioFicha: perfilAtual.id
         };
 
-        console.log(fichaDados)
+        console.log(fichaDados);
 
         const options = {
-            method: 'POST', // PUT para substituir ou POST para adicionar
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(fichaDados) // Convertendo os dados para JSON
+            body: JSON.stringify(fichaDados)
         };
 
-        // Fazendo a requisição POST
         fetch(url, options)
             .then(response => {
                 if (!response.ok) {
@@ -43,12 +43,10 @@ function postFichaNoFirebase() {
                 return response.json();
             })
             .then(data => {
-                // Manipulando a resposta
                 console.log('deu certo yay');
                 alert('Ficha criada com sucesso'); 
             })
             .catch(error => {
-                // Tratamento de erro
                 console.error('Erro ao enviar os dados:', error);
             });
     }
@@ -75,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 butFinalizar.innerHTML = 'Voltar';
                 dadosEnviados = true;
 
-            } else { // Na segunda vez que o usuário clicar em enviar ele volta para tela de fichas
+            } else {
                 window.location.href = 'fichasJogador.html';
             }
         });
@@ -86,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
         let ficha = JSON.parse(localStorage.getItem('ficha')) || {};
         Object.assign(ficha, formData);
         localStorage.setItem('ficha', JSON.stringify(ficha));
-        //window.location.href = nextPage; // TAVA DANDO PROBLEMA, ELE PASSAVA PRA PRÓX PÁGINA E PERDIA OS DADOS OU ALGO ASSIM
     }
 
     function captureFormData() {
@@ -99,5 +96,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
         return formData;
     }
-
 });

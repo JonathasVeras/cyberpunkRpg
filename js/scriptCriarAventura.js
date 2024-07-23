@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const iFile = document.getElementById('i-file');
     const imgPH = document.getElementById('imgPH');
 
-    // Função para converter a imagem em base64
     function convertToBase64(file) {
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (imagemArquivo) {
                     imagemBase64 = await convertToBase64(imagemArquivo);
                 } else {
-                    // imagem place holder já convertuda p/ base 64 
                     imagemBase64 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABmJLR0QA/wD/AP+gvaeTAAABJElEQVR4nO3SsQkAMAzAQPb/P1GhwwyzGFFhRRRTTjlVS5FHRDQkgD4KY9Y9Xw2q2tIAAAAAAAAAAAAAv19eqDgcAAAAAAAAAAAAAQAF1fOnLwAAAAAAAAAAAAAA4JUPXbgcAAAAAAAAAAAAAQKF1eZLxAAAAAAAAAAAAAA4HUPn4gBAAAAAAAAAAAAABQCVf27HAADq8neKQwB9M/BNX+sfgR/xD+om8Ub9I7yjupRtVGz/Ge3r39vuPbaTuqu/v6P+4Dcf/wz2u/kqxHvFt9F7A/yl5m7K7XehXM0k9L6VL9qtSujddVm6o1rWPLibx/3eqJfV+v+mP7Kz9I7R3rRYsYv8l9A9TVtv/pN9X58gD+iFkAAAAAAAAAAAAvnDzdx8JIdv1AAAAAElFTkSuQmCC';
                 }
     
@@ -62,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(data => {
                     alert("Aventura criada com sucesso!");
                     console.log("Dados enviados:", data);
-                    // Redirecionar ou limpar o formulário, se necessário
                 })
                 .catch(error => {
                     console.error('Erro ao criar aventura:', error);
@@ -74,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             butFinalizar.innerHTML = 'Voltar';
             dadosEnviados = true;
             
-        } else { // Na segunda vez que o usuário clicar em enviar ele volta para tela de fichas
+        } else {
             window.location.href = 'aventurasJogador.html';
         }
         

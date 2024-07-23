@@ -79,3 +79,18 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+.navbarListaFicha{
+    display: flex;
+}
+
+.butDeslogar{
+    background-color: #00ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+:hover.butDeslogar{
+    padding: 7px;
+    cursor:pointer;
+}

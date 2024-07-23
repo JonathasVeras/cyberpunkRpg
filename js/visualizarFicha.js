@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mainFichasJogador = document.querySelector('.mainFichasJogador');
 
-    // Recupera a ficha do localStorage
     const fichaSelecionada = localStorage.getItem('fichaSelecionada');
     
     if (fichaSelecionada) {
         const ficha = JSON.parse(fichaSelecionada);
 
-        // Cria o conteúdo HTML com os detalhes da ficha
         const atributosHtml = Object.entries(ficha.atributos).map(([key, value]) => `
             <div class="atributo">
                 <strong>${key}:</strong> ${value}
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Adiciona o conteúdo HTML ao elemento main
         mainFichasJogador.innerHTML = fichaHtml;
     } else {
         mainFichasJogador.innerHTML = '<p>Nenhuma ficha selecionada.</p>';
@@ -35,13 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const mainFichasJogador = document.querySelector('.mainFichasJogador');
 
-    // Recupera a ficha do localStorage
     const fichaSelecionada = localStorage.getItem('fichaSelecionada');
     
     if (fichaSelecionada) {
         const ficha = JSON.parse(fichaSelecionada);
 
-        // Cria o conteúdo HTML com os detalhes da ficha
         const atributosHtml = Object.entries(ficha.atributos).map(([key, value]) => `
             <div class="atributo">
                 <strong>${key}:</strong> ${value}
@@ -71,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Adiciona o conteúdo HTML ao elemento main
         mainFichasJogador.innerHTML = fichaHtml;
     } else {
         mainFichasJogador.innerHTML = '<p>Nenhuma ficha selecionada.</p>';

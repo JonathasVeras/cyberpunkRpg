@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2093</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/criarAventura.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../js/editarAventura.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Cyberpunk 2093</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="fichasJogador.html">Jogador</a></li>
+                    <li><a href="aventurasJogador.html">Mestre</a></li>
+                    <li><a href="https://arkana-rpg.com.br/cyberpunk-2093/">Referências</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mainFichasJogador">
+        <h1 class="tituloPagina">
+            Edite Sua Aventura
+        </h1>
+
+        <div id="caixaCriarAventura">
+            <div id="fdivAventura">
+                <div id="imgAndDescricao">
+                    <form id="formImagem">
+                        <span class="descricoesFicha">Escolha uma imagem para a sua campanha:</span>
+                        <img src="../imagens/image_place_holder.png" alt="Place Holder" id="imgPH">
+                        <label for="i-file" style="font-size: smaller;">Importe o arquivo com a sua imagem:</label>
+                        <input type="file" name="myFile" id="i-file">
+                    </form>
+
+                    <form id="formDescricao">
+                        <span class="descricoesFicha">Escreva uma breve descrição 
+                        para sua campanha:</span>
+                        <textarea id="txtAreaDescricao" rows="10" cols="30"></textarea>
+                    </form>
+                </div>
+                <div id="nomeAventura">
+                    <form id="formNome">
+                        <div class="descricoesFicha">Edite o nome da sua aventura:</div>
+                        <input type="text" id="inputNomeAventura" size="32">
+                    </form>
+                </div>
+
+                <div id="botoes">
+                    <button type="button" onclick="window.location.href = 'aventurasJogador.html';" id="butSair">Sair</button>
+                    <button type="button" id="butFinalizar">Atualizar</button>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Universidade Federal do Rio Grande do Norte</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* visualizarFicha.css */
+.mainAventurasJogador{
+    min-height:100vh;
+}
+
+/* visualizarFicha.css */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d0d0d;
+    border-bottom: 2px solid #d23669;
+    padding: 10px 0;
+}
+
+header h1 {
+    color: #d23669;
+    text-align: center;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #d23669;
+}
+
+.mainAventurasJogador {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.aventura-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-descricao-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+
+#nomeAventura{
+    color: #d23669;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#descricaoAventura{
+    margin: 10px 1%;
+    font-size: 1.1em;
+    flex: 1;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#imagemAventura{
+    height: 250px;
+    width: 400px;
+    margin-right: 40px;
+}

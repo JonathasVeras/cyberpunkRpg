@@ -21,7 +21,7 @@ header {
 header h1 {
     color: #d23669;
     text-align: center;
-    margin: 0;
+    margin-left: 20px;
     font-size: 2em;
 }
 

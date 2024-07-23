@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const fichasContainer = document.getElementById('fichasContainer');
 
-    // URL do Firebase Realtime Database (substitua <SEU-PROJETO> pelo seu projeto)
+    // URL do Firebase
     const url = 'https://cyberpunk-web1-default-rtdb.firebaseio.com/fichas.json';
 
     // Fazendo a requisição GET para buscar as fichas

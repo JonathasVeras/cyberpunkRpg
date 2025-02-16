@@ -32,3 +32,11 @@ Incorporamos uma enorme lista de armas para o usuário explorar:
 
 Ao visualizar a ficha, o usuário também pode adicionar as armas e cyberware de seu personagem, além de ter vários diferentes dados à sua disposição, pronto para tudo que precisar ao jogar uma sessão!
 ![image](https://github.com/user-attachments/assets/7b7fcb67-3699-46b3-be3b-1997521a080e)
+
+
+COMO RODAR:
+- Faça download do projeto
+- Abra o terminal na pasta do projeto
+- Digite: npm run dev
+- Copie e cole o link que aparece em seu navegador
+- Aproveite o site!
